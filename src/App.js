@@ -1,28 +1,19 @@
-import './App.css';
-import React, { Component } from 'react'
-import General from "./components/General"
-import Education from "./components/Education"
-import Experience from './components/Experience';
+import React from 'react'
+import { General, Education, Experience } from "./components/Categories"
 
-class App extends Component {
-    constructor() {
-        super()
-    }
-
-    render() {
-        return (
-            <div className="App">
-            <div className="header">
-              <h1>CV Builder</h1>
-              </div>
-              <div className="main">
-                <General/>
-                <Education/>
-                <Experience/>
-              </div>
-            </div>
-        )
-    }
+function App() {
+  return (
+    <div className="container">
+      <header>
+        <h1>CV Builder</h1>
+      </header>
+      <div className="forms">
+        <General></General>
+        <Education></Education>
+        <Experience></Experience>
+      </div>
+    </div>
+  )
 }
 
 export default App
