@@ -1,3 +1,7 @@
+html {
+  font-family: sans-serif;
+}
+
 h1 {
   margin: 0;
 }
@@ -50,6 +54,7 @@ input {
 
 label {
   font-weight: bold;
+  font-size: 0.85rem;
 }
 
 .input-div {
@@ -69,11 +74,12 @@ button {
   cursor: pointer;
 }
 
-button:hover {
-}
-
 p {
   margin: 10px 0px;
   color: rgb(80, 79, 79);
-  display: none;
+  display: block;
+}
+
+form {
+  width: 650px;
 }
